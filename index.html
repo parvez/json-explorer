@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link href="favicon.ico" type="image/x-icon"      rel="shortcut icon" />
+  <link href="favicon.ico" type="image/x-icon"      rel="icon" />
+  <title>Product JSON Explorer</title>
+  <link href="styles/main.css" media="all" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+  <div id="the_page">
+    <h1>Product <span>JSON</span> Explorer</h1>
+    <div id="widget" class="large_curved_shadowed">
+      <div id="products_list_container">
+        <h2>Products</h2>
+        <ul id="products_list">
+        </ul>
+      </div>
+      <div id="product_detail_container">
+        <h2>Detail</h2>
+        <div id="product_detail">
+          <div id="detail_box" style="padding:0;width:0;">
+            <div class="c_product_name" id="product_name"></div>
+            <div class="c_product_description" id="product_description"></div>
+            <div class="c_product_price" id="product_price"></div>
+          </div>
+        </div>
+        <a href="#" class="button_gray" id="enter_json_button"><span>Enter JSON</span></a>
+        <div class="clear"></div>
+      </div>
+      <div id="edit_form_container">
+        <form id="enter_json_form" class="edit_form large_curved_shadowed">
+          <h3>Enter JSON</h3>
+          <div class="form_error" style="display:none;">Invalid JSON entry</div>
+          <label for="f_name">name</label><br />
+          <input class="c_product_name" type="text" name="f_name" id="f_name" maxlength="25" />
+          <label for="f_description">description</label><br />
+          <textarea rows="2" class="c_product_description" name="f_description" id="f_description"></textarea>
+          <label for="f_price">price</label><br />
+          <div id="f_price_container">
+            <input class="c_product_price" type="text" name="f_price" id="f_price" maxlength="10" />
+            <div id="f_dollar">$</div>
+          </div>
+          <div class="inline_button"><a href="#" class="button_gray" id="form_enter_json_button"><span>Enter JSON</span></a></div>
+          <div class="inline_button"><a href="#" class="button_gray" id="form_enter_json_cancel"><span>Cancel</span></a></div>
+          <div class="clear"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+body {
+  font: 75% Helvetica,Verdana,Arial,sans-serif; /* default browser font size is 16px.. makes it 12px */
+  background: #7e7e7e url('../images/tile_bg_01.png') repeat scroll top left;
+  padding: 0;
+  margin: 0;
+}
+* { /* defining custom padding and margins */
+  padding: 0;
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
+.large_curved_shadowed {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  behavior: url(border-radius.htc);
+
+  -webkit-box-shadow: 0 0 35px #444; 
+  -moz-box-shadow: 0 0 35px #444;
+  box-shadow: 0 0 35px #444;
+}
+
+#the_page {
+  width: 950px; /* ideal page width */
+  margin: 0 auto;
+  position: relative;
+}
+#the_page .form_error {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+#the_page h1 {
+  margin: 10px 0;
+  font: 4em Georgia;
+  color: yellow;
+  text-align: center;
+}
+#the_page h1 span {
+  font: normal normal bold 1em Helvetica,Verdana,Arial,sans-serif;
+  color: white;
+  letter-spacing: -0.1em;
+}
+#the_page #widget {
+  width: 600px;
+  height: 400px;
+  margin: 15px auto;
+  position: relative;
+
+  background-color: #c8c8c8;
+  background-image: url('../images/tile_bg_02.png'); /* IE */
+  background-image: -moz-linear-gradient(100% 100% 90deg, #ababab, #e6e6e6);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#ababab));
+}
+#the_page #widget h2 {
+  color: #6b87ff;
+  font-size: 2.4em;
+  border-bottom: 1px solid #bfbfbf;
+}
+#the_page #widget #products_list_container,
+#the_page #widget #product_detail_container {
+  width: 300px;
+  float: left;
+  position: relative;
+}
+#the_page #widget #products_list_container h2 {
+  padding: 20px 0 0 20px;
+}
+#the_page #widget #product_detail_container h2 {
+  padding: 20px 20px 0 0;
+  text-align: right;
+}
+#the_page #widget #products_list_container ul {
+  overflow: auto;
+  height: 315px;
+  padding: 5px 0;
+  margin-left: 20px;
+  list-style: none;
+  background-color: white;
+  border: 2px solid #6b87ff;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+#the_page #widget #products_list_container ul li {
+  padding: 0 6px;
+  cursor: pointer;
+}
+#the_page #widget #products_list_container ul li.active,
+#the_page #widget #products_list_container ul li:hover {
+  color: white;
+  background-color: #6c91ff;
+  background-image: url('../images/tile_bg_03.png'); /* IE */
+  background: -moz-linear-gradient(top left, #6c91ff, #b9c4ff);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6c91ff), to(#b9c4ff));
+}
+#the_page .button_gray {
+  height: 22px;
+  padding: 7px 20px 0;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  
+  background-color: #c8c8c8;
+  background-image: url('../images/tile_bg_04.png'); /* IE */
+  background-image: -moz-linear-gradient(100% 100% 90deg, #ababab, #e6e6e6);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#ababab));
+
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  behavior: url(border-radius.htc);
+
+  -webkit-box-shadow: 0 0 5px #444; 
+  -moz-box-shadow: 0 0 5px #444;
+  box-shadow: 0 0 5px #444;
+}
+#the_page .button_gray span {
+  filter:progid: DXImageTransform.Microsoft.Glow(Color=#444, Strength=2);
+  text-shadow: 0 0 2px #444;
+}
+#the_page .button_gray:hover {
+  background-color: #c8c8c8;
+  background-image: url('../images/tile_bg_05.png'); /* IE */
+  background-image: -moz-linear-gradient(100% 100% 90deg, #e6e6e6, #ababab);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#e6e6e6));
+}
+#the_page #widget #product_detail_container #product_detail {
+  height: 300px;
+}
+#the_page #widget #product_detail_container .button_gray {
+  margin: 10px;
+  float: right;
+}
+#the_page #widget #product_detail #detail_box {
+  height: 300px;
+  padding: 0 10px;
+  background-image: url('../images/tile_bg_03.png'); /* IE */
+  background: -moz-linear-gradient(left, #6c91ff, #b9c4ff);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6c91ff), to(#b9c4ff));
+  text-align: center;
+}
+
+#the_page .c_product_name {
+  color: #E6E6E6;
+  font: bold 2.8em Helvetica,Verdana,Arial,sans-serif;
+  letter-spacing: -0.06em;
+  line-height: 0.74em;
+  text-shadow: 10px 10px 5px #889ae0;
+  width: 240px;
+}
+#the_page .c_product_description {
+  color: black;
+  font: normal 1.8em Georgia;
+  width: 240px;
+}
+#the_page .c_product_price {
+  color: yellow;
+  font: bold 2.4em Georgia;
+  letter-spacing: -0.05em;
+  line-height: 0.8em;
+  text-shadow: 2px 2px 5px #889ae0;
+  width: 200px;
+}
+
+#the_page #widget #product_detail #detail_box #product_name {
+  text-transform: uppercase;
+  margin-top: -1px;
+}
+#the_page #widget #product_detail #detail_box #product_description {
+  padding: 20px;
+}
+#the_page #widget #product_detail #detail_box #product_price {
+  padding-right: 20px;
+  float: right;
+  text-align: right;
+}
+
+.edit_form {
+  padding: 20px;
+
+  background-image: url('../images/tile_bg_03.png'); /* IE */
+  background: -moz-linear-gradient(left, #6c91ff, #b9c4ff);
+  -webkit-background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6c91ff), to(#b9c4ff));
+}
+.edit_form #f_price_container {
+  position: relative;
+}
+.edit_form #f_price_container #f_dollar {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  color: yellow;
+  font: normal 2em Georgia;
+  letter-spacing: -0.05em;
+  line-height: 0.8em;
+}
+.edit_form #f_price_container #f_price {
+  padding-left: 20px;
+}
+.edit_form label {
+  padding-top: 10px;
+  color: yellow;
+  font: normal 2em Georgia;
+  letter-spacing: -0.05em;
+  line-height: 0.8em;
+}
+.edit_form input,
+.edit_form textarea {
+  border: 1px solid yellow;
+  padding: 5px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+#the_page #edit_form_container {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  behavior: url(border-radius.htc);
+
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  display: none;
+  width: 600px;
+  height: 400px;
+}
+#the_page #edit_form_container #enter_json_form {
+  width: 280px;
+  margin: 10px auto 0;
+}
+#the_page #edit_form_container #enter_json_form h3 {
+  color: yellow;
+  font-size: 2.6em;
+  text-align: center;
+  border-bottom: 1px solid yellow;
+  margin-bottom: 10px;
+}
+
+#the_page .inline_button {
+  display: inline;
+  float: left;
+  padding-right: 10px;
+}
